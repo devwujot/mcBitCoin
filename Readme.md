@@ -1,6 +1,6 @@
 ## mcBitCoin native Android app
 
-The idea of developing BitCoin app was to fulfill the following business requirements:
+The idea of developing mcBitCoin app was to fulfill the following business requirements:
 
 * User is able to see the prices of Bitcoin for the last two weeks in USD with the appropriate date of the record.
 
