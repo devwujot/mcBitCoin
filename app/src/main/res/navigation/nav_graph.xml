@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pricesFragment">
+
+    <fragment
+        android:id="@+id/pricesFragment"
+        android:name="com.decwujot.bitcoin.features.prices.PricesFragment"
+        android:label="mcBitCoin"
+        tools:layout="@layout/fragment_prices">
+        <action
+            android:id="@+id/action_pricesFragment_to_priceDetailFragment"
+            app:destination="@id/priceDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/priceDetailFragment"
+        android:name="com.decwujot.bitcoin.features.priceDetail.PriceDetailFragment"
+        android:label="BitCoin Rates"
+        tools:layout="@layout/fragment_price_detail">
+
+        <argument
+            android:name="price"
+            app:argType="com.decwujot.bitcoin.data.model.Price" />
+    </fragment>
+
+</navigation>
